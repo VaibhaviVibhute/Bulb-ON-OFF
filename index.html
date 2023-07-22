@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Task</title>
+</head>
+<style>
+    #bulb{
+        margin-left: 20px;
+    }
+    .but{
+        margin-left: 50px;
+    }
+</style>
+<body>
+    <div id="bulb"></div>
+    <br><br>
+    <button id="on" class="but" onclick="on()">ON</button>
+    <button id="off" class="but" onclick="off()">OFF</button>
+
+    <script>
+            let bulb = document.getElementById("bulb");
+            bulb.style.height="200px";
+            bulb.style.width="200px";
+            bulb.style.border="1px solid";
+            bulb.style.borderRadius="50%"
+
+            function on() {
+                let on=document.getElementById("on");
+                bulb.style.backgroundColor=prompt("enter your favourite color");
+            }
+
+            function off() {
+                let off=document.getElementById("off");
+                bulb.style.backgroundColor="white";
+            }
+    </script>
+</body>
+</html>
